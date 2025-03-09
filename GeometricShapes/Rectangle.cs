@@ -10,35 +10,32 @@ namespace GeometricShapes
         double Perimeter;
         double Diagonal;
 
-        public static void SetRectangle(Rectangle a)
+        public void SetRectangle()
         {
             Console.Write("\nType the width of the rectangle: ");
-            a.Width = double.Parse(Console.ReadLine());
+            Width = double.Parse(Console.ReadLine());
 
             Console.Write("\nType the height of the rectangle: ");
-            a.Height = double.Parse(Console.ReadLine());
+            Height = double.Parse(Console.ReadLine());
 
-            Rectangle.SetRectangleArea(a);
-            Rectangle.SetRectanglePerimeter(a);
-            Rectangle.SetRectangleDiagonal(a);
+            SetRectangleArea();
+            SetRectanglePerimeter();
+            SetRectangleDiagonal();
         }
 
-        private static void SetRectangleArea(Rectangle a)
-        {
-            double area = a.Width * a.Height;
-            a.Area = area;
+        private void SetRectangleArea()
+        { 
+            Area = Width * Height;
         }
 
-        private static void SetRectanglePerimeter(Rectangle a)
+        private void SetRectanglePerimeter()
         {
-            double perimeter = 2 * (a.Width + a.Height);
-            a.Perimeter = perimeter;
+            Perimeter = 2 * (Width + Height);
         }
 
-        private static void SetRectangleDiagonal(Rectangle a)
+        private void SetRectangleDiagonal()
         {
-            double diagonal = Math.Sqrt(Math.Pow(a.Width, 2) + Math.Pow(a.Height, 2));
-            a.Diagonal = diagonal;
+            Diagonal = Math.Sqrt(Math.Pow(Width, 2) + Math.Pow(Height, 2));
         }
 
         public override string ToString()

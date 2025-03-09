@@ -12,24 +12,22 @@ namespace GeometricShapes
         {
             return $"\nRadius: {Radius:F2}\nCircumference: {Circumference:F2}\nVolume: {Volume:F2}";
         }
-        public static void SetCircle(Circle a)
+        public void SetCircle()
         {
             Console.Write("\nType the radius of the circle: ");
-            a.Radius = double.Parse(Console.ReadLine());
-            Circle.SetCircleCircumference(a);
-            Circle.SetCircleVolume(a);
+            Radius = double.Parse(Console.ReadLine());
+            SetCircleCircumference();
+            SetCircleVolume();
         }
 
-        private static void SetCircleCircumference(Circle a)
+        private void SetCircleCircumference()
         {
-            double circumference = 2 * Math.PI * a.Radius;
-            a.Circumference = circumference;
+            Circumference = 2 * Math.PI * Radius;
         }
 
-        private static void SetCircleVolume(Circle a)
+        private void SetCircleVolume()
         {
-            double volume = (4 / 3) * Math.PI * Math.Pow(a.Radius, 3);
-            a.Volume = volume;
+            Volume = (4 / 3) * Math.PI * Math.Pow(Radius, 3);
         }
 
         

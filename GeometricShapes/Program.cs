@@ -11,19 +11,16 @@ namespace GeometricShapes
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-            Triangle a;
-            a = new Triangle();
-            Triangle.SetTriangle(a);
+            Triangle a = new Triangle();
+            a.SetTriangle();
             Console.WriteLine(a);
 
-            Rectangle b;
-            b = new Rectangle();
-            Rectangle.SetRectangle(b);
+            Rectangle b = new Rectangle();
+            b.SetRectangle();
             Console.WriteLine(b);
 
-            Circle c;
-            c = new Circle();
-            Circle.SetCircle(c);
+            Circle c = new Circle();
+            c.SetCircle();
             Console.WriteLine(c);
         }
     }
