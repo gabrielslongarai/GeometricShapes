@@ -2,18 +2,19 @@
 {
     class Triangle
     {
-        public string Name;
         public double SideA;
         public double SideB;
         public double SideC;
         private double SemiPerimeter;
         private double Area;
 
+        public override string ToString()
+        {
+            return $"\nTriangle with sides {SideA}, {SideB} and {SideC} has an area of {Area}";
+
+        }
         public static void SetTriangle(Triangle a)
         {
-            Console.Write("\nType the name of your triangle: ");
-            a.Name = Console.ReadLine();
-
             Console.Write("\nType the size of side A: ");
             a.SideA = double.Parse(Console.ReadLine());
 
@@ -42,12 +43,6 @@
             double area = Math.Sqrt(p * (p - a.SideA) * (p - a.SideB) * (p - a.SideC));
 
             a.Area = area;
-        }
-
-        public static void PrintTriangleArea(Triangle a)
-        {
-            Console.WriteLine($"The triangle \"{a.Name}\" area is: {a.Area:F4}");
-
         }
     }
 }

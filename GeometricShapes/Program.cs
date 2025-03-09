@@ -11,21 +11,14 @@ namespace GeometricShapes
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-            Triangle x, y;
+            Triangle x;
             x = new Triangle();
-            y = new Triangle();
-
             Triangle.SetTriangle(x);
-            Triangle.SetTriangle(y);
-
-            Triangle.PrintTriangleArea(x);
-            Triangle.PrintTriangleArea(y);
+            Console.WriteLine(x);
 
             Rectangle t;
             t = new Rectangle();
-
             Rectangle.SetRectangle(t);
-
             Console.WriteLine(t);
         }
     }
