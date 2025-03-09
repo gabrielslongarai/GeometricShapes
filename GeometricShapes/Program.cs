@@ -21,9 +21,6 @@ namespace GeometricShapes
             Triangle.PrintTriangleArea(x);
             Triangle.PrintTriangleArea(y);
 
-            Triangle.ComparingTriangleArea(x, y);
-            Triangle.PrintLargestArea(x, y);
-
             Rectangle t;
             t = new Rectangle();
 

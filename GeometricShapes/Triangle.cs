@@ -44,23 +44,6 @@
             a.Area = area;
         }
 
-        public static string ComparingTriangleArea(Triangle a, Triangle b)
-        {
-            if (a.Area > b.Area)
-            {
-                return a.Name;
-            }
-            else
-            {
-                return b.Name;
-            }
-        }
-
-        public static void PrintLargestArea(Triangle a, Triangle b)
-        {
-            Console.WriteLine($"Maior área: {ComparingTriangleArea(a, b)}");
-        }
-
         public static void PrintTriangleArea(Triangle a)
         {
             Console.WriteLine($"The triangle \"{a.Name}\" area is: {a.Area:F4}");
