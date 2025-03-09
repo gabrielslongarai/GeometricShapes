@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Drawing;
 using System.Globalization;
 
 
-namespace Program
+namespace GeometricShapes
 {
     class Program
     {
@@ -22,6 +23,13 @@ namespace Program
 
             Triangle.ComparingTriangleArea(x, y);
             Triangle.PrintLargestArea(x, y);
+
+            Rectangle t;
+            t = new Rectangle();
+
+            Rectangle.SetRectangle(t);
+
+            Console.WriteLine(t);
         }
     }
 
