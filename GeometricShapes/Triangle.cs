@@ -10,7 +10,7 @@
 
         public override string ToString()
         {
-            return $"\nTriangle with sides {SideA}, {SideB} and {SideC} has an area of {Area}";
+            return $"\nTriangle with sides {SideA:F2}, {SideB:F2} and {SideC:F2} has an area of {Area:F2}";
 
         }
         public static void SetTriangle(Triangle a)

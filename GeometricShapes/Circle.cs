@@ -10,11 +10,11 @@ namespace GeometricShapes
 
         public override string ToString()
         {
-            return $"Radius: {Radius}\nCircumference: {Circumference}\nVolume: {Volume}";
+            return $"\nRadius: {Radius:F2}\nCircumference: {Circumference:F2}\nVolume: {Volume:F2}";
         }
         public static void SetCircle(Circle a)
         {
-            Console.WriteLine("\nType the radius of the circle: ");
+            Console.Write("\nType the radius of the circle: ");
             a.Radius = double.Parse(Console.ReadLine());
             Circle.SetCircleCircumference(a);
             Circle.SetCircleVolume(a);

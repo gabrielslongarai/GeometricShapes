@@ -12,10 +12,10 @@ namespace GeometricShapes
 
         public static void SetRectangle(Rectangle a)
         {
-            Console.WriteLine("\nType the width of the rectangle: ");
+            Console.Write("\nType the width of the rectangle: ");
             a.Width = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("\nType the height of the rectangle: ");
+            Console.Write("\nType the height of the rectangle: ");
             a.Height = double.Parse(Console.ReadLine());
 
             Rectangle.SetRectangleArea(a);
@@ -43,7 +43,7 @@ namespace GeometricShapes
 
         public override string ToString()
         {
-            return $"Width: {Width}\nHeight: {Height}\nArea: {Area}\nPerimeter: {Perimeter}\nDiagonal: {Diagonal}";
+            return $"\nWidth: {Width:F2}\nHeight: {Height:F2}\nArea: {Area:F2}\nPerimeter: {Perimeter:F2}\nDiagonal: {Diagonal:F2}";
         }
     }
 

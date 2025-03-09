@@ -11,15 +11,20 @@ namespace GeometricShapes
         {
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
-            Triangle x;
-            x = new Triangle();
-            Triangle.SetTriangle(x);
-            Console.WriteLine(x);
+            Triangle a;
+            a = new Triangle();
+            Triangle.SetTriangle(a);
+            Console.WriteLine(a);
 
-            Rectangle t;
-            t = new Rectangle();
-            Rectangle.SetRectangle(t);
-            Console.WriteLine(t);
+            Rectangle b;
+            b = new Rectangle();
+            Rectangle.SetRectangle(b);
+            Console.WriteLine(b);
+
+            Circle c;
+            c = new Circle();
+            Circle.SetCircle(c);
+            Console.WriteLine(c);
         }
     }
 
