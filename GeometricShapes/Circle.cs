@@ -12,7 +12,7 @@ namespace GeometricShapes
         {
             return $"\nRadius: {Radius:F2}\nCircumference: {Circumference:F2}\nVolume: {Volume:F2}";
         }
-        public void SetCircle()
+        public Circle()
         {
             Console.Write("\nType the radius of the circle: ");
             Radius = double.Parse(Console.ReadLine());

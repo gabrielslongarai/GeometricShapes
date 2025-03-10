@@ -12,15 +12,12 @@ namespace GeometricShapes
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
             Triangle a = new Triangle();
-            a.SetTriangle();
             Console.WriteLine(a);
 
             Rectangle b = new Rectangle();
-            b.SetRectangle();
             Console.WriteLine(b);
 
             Circle c = new Circle();
-            c.SetCircle();
             Console.WriteLine(c);
         }
     }

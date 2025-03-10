@@ -13,7 +13,7 @@
             return $"\nTriangle with sides {SideA:F2}, {SideB:F2} and {SideC:F2} has an area of {Area:F2}";
 
         }
-        public void SetTriangle()
+        public Triangle()
         {
             Console.Write("\nType the size of side A: ");
             SideA = double.Parse(Console.ReadLine());

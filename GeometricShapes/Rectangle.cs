@@ -10,7 +10,7 @@ namespace GeometricShapes
         double Perimeter;
         double Diagonal;
 
-        public void SetRectangle()
+        public Rectangle()
         {
             Console.Write("\nType the width of the rectangle: ");
             Width = double.Parse(Console.ReadLine());
